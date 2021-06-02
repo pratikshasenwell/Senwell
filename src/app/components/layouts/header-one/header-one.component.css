@@ -79,6 +79,7 @@ a {
   .active, .btn:hover {
     background-color: rgb(28, 12, 243);
     color: white;
+    
   }
 .header .navigation .main-menu>.menu-item>a {
     font-size: 16px;
@@ -156,7 +157,7 @@ a {
 /* @media only screen and (min-width:600px) {
     .name{
         font-size: 15px;
-        
+       
     } 
     .subname{
         font-size: 14px;

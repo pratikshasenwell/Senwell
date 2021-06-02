@@ -85,3 +85,10 @@ ul li:before {
     font-family: 'Dosis', sans-serif;
     font-size: 17px;
 }
+.col-lg-4{
+    margin-top: 12%;
+    background-color: #404CDC!important;
+    /* margin-bottom: 102%; */
+    margin-bottom: 9vh;
+    height: 95vh;
+}

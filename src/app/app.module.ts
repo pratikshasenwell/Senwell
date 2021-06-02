@@ -40,6 +40,8 @@ import { IosDeveloperComponent } from './components/pages/ios-developer/ios-deve
 import { BuisnessDevelopmentExecutiveUkComponent } from './components/pages/buisness-development-executive-uk/buisness-development-executive-uk.component';
 import { AndroidDeveloperUkComponent } from './components/pages/android-developer-uk/android-developer-uk.component';
 import { UiUxDesignerComponent } from './components/pages/ui-ux-designer/ui-ux-designer.component';
+import { FlexLayoutModule } from "@angular/flex-layout";
+
 
 @NgModule({
   declarations: [
@@ -78,12 +80,14 @@ import { UiUxDesignerComponent } from './components/pages/ui-ux-designer/ui-ux-d
     IosDeveloperComponent,
     BuisnessDevelopmentExecutiveUkComponent,
     AndroidDeveloperUkComponent,
-    UiUxDesignerComponent
+    UiUxDesignerComponent,
+    
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FlexLayoutModule
   ],
   providers: [
       Location, {
