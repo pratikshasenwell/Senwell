@@ -1,0 +1,33 @@
+h4{
+    text-align: center;
+    font-weight: 600;
+    margin-top: 2%;
+}
+.heading span {
+    height: 3px;
+    width: 15px;
+    vertical-align: top;
+    display: inline-block;
+}
+.heading{
+    margin-top:7%
+}
+
+.black {
+    background-color: #000000;
+}
+.red {
+    background-color: #df002f;
+    margin-right: 2px;
+}
+h6 {
+    font-size: 22px;
+    font-weight: 600;
+}
+.red_text {
+    color: #007bff;
+}
+.small-heading{
+    margin-top: 10%;
+    font-weight: 500;
+}

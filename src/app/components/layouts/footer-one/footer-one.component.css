@@ -1,0 +1,21 @@
+.imageiso{
+    height: 13vh;
+    /* width: 100%; */
+    
+}
+.name{
+    color: white;
+    font-size: 21px;
+    font-weight: 600;
+    margin-top: 8%;
+}
+.subname{
+    color: white;
+    font-size: 14px;
+}
+img {
+    max-width: 70%;
+    width: auto;
+    height: auto;
+    transition: 0.5s;
+}

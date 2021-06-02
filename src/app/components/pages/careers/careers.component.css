@@ -1,0 +1,104 @@
+
+
+.currentOpening_career_tabs a.active {
+    background-size: 200% auto;
+    background-image: linear-gradient(to right, #fc5954 0%, #fd692a 51%);
+    color: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 25px 13px -16px rgb(0 0 0 / 15%);
+}
+i{
+    color: blue;
+}
+h2{
+    font-size: 25px;
+    font-weight: 700;
+    font-family:sans-serif;
+}
+.shop-tabs .nav-tabs>.nav-item>.nav-link {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+   
+}
+.nav-item{
+    font-size: 25px;
+}
+
+.heading span {
+    height: 3px;
+    width: 15px;
+    vertical-align: top;
+    display: inline-block;
+   
+}
+.red {
+    background-color: #df002f;
+    margin-right: 2px;
+}
+.black {
+    background-color: #000000;
+}
+.heading h6 {
+    color: #000000;
+    font-size: 30px;
+    
+}
+.heading {
+    margin-bottom: 30px;
+    text-align: center;
+    
+}
+.image{
+    height: 10%;
+    width: 10%;
+}
+.box_cnt:hover{
+    color: blue;
+}
+.col-4{
+     margin-top: -20%; 
+     margin-left: 70%;
+     max-width: 190%;
+    height: 100%;
+    width: 100%; 
+}
+img {
+    max-width: 200%;
+    width: auto;
+    height: auto;
+    transition: 0.5s;
+    margin-left: -100%;
+}
+/* .imgb {
+    max-width: 53%;
+    width: auto;
+    height: auto;
+    transition: 0.5s;
+    margin-left: 48%;
+    margin-top: -228%;
+    border-radius: 30px;
+} */
+.header .navigation .main-menu>.menu-item>a {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 90px;
+    display: inline-flex;
+    padding: 0 30px;
+    cursor: pointer;
+}
+
+/* @media only screen and (max-width: 360px) {
+    img {
+      
+        margin-left: -152%;
+    }
+    .imgb {
+        max-width: 53%;
+        width: auto;
+        height: auto;
+        transition: 0.5s;
+        margin-left: 43%;
+        margin-top: -289%;
+        
+  }
+} */
