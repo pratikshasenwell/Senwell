@@ -1,0 +1,13 @@
+{
+  "hosting": {
+    "public": "www",
+    "site": "senwell-b8e50",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
