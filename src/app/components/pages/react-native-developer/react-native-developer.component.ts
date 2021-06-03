@@ -28,12 +28,12 @@ export class ReactNativeDeveloperComponent implements OnInit {
   }
   uploadCandidateCv(event: any) {
     // 
-    this.authService.UploadCandidateFile(event).subscribe(url => {
-      this.ReactCandidate.get('file').setValue(url)
-    })
+    this.authService.UploadCandidateFile(event)
   }
   saveReactcandidate() {
-    this.authService.SaveCandidateData(this.ReactCandidate.value)
+    debugger
+    // this.ReactCandidate.patchValue({file:this.authService.docDownloadUrl$.value})
+    this.authService.SaveCandidateData({formdata:this.ReactCandidate.value,downloadurl:this.authService.docDownloadUrl$.value})
   }
 
 }
