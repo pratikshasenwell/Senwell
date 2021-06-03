@@ -41,8 +41,12 @@ import { BuisnessDevelopmentExecutiveUkComponent } from './components/pages/buis
 import { AndroidDeveloperUkComponent } from './components/pages/android-developer-uk/android-developer-uk.component';
 import { UiUxDesignerComponent } from './components/pages/ui-ux-designer/ui-ux-designer.component';
 import { FlexLayoutModule } from "@angular/flex-layout";
-
-
+// import { registerFirestore } from '@firebase/firestore';
+import { environment } from 'src/environments/environment';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from "@angular/fire/firestore";
+import { AngularFireStorageModule } from '@angular/fire/storage';
 @NgModule({
   declarations: [
     AppComponent,
@@ -87,7 +91,13 @@ import { FlexLayoutModule } from "@angular/flex-layout";
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    ReactiveFormsModule,
+    FormsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule,
+    AngularFireStorageModule
+
   ],
   providers: [
       Location, {

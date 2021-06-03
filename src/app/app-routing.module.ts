@@ -26,6 +26,8 @@ import { BuisnessDevelopmentExecutiveUkComponent } from './components/pages/buis
 import { AndroidDeveloperUkComponent } from './components/pages/android-developer-uk/android-developer-uk.component';
 import { IosDeveloperComponent } from './components/pages/ios-developer/ios-developer.component';
 import { UiUxDesignerComponent } from './components/pages/ui-ux-designer/ui-ux-designer.component';
+import { NgxCaptchaModule } from 'ngx-captcha';
+
 
 
 const routes: Routes = [
@@ -58,7 +60,9 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes),
+    NgxCaptchaModule
+  ],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

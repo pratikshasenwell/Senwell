@@ -16,6 +16,7 @@
     "@angular/common": "~10.0.5",
     "@angular/compiler": "~10.0.5",
     "@angular/core": "~10.0.5",
+    "@angular/fire": "^6.1.5",
     "@angular/flex-layout": "^10.0.0-beta.32",
     "@angular/forms": "~10.0.5",
     "@angular/material": "^10.2.7",
@@ -24,6 +25,8 @@
     "@angular/router": "~10.0.5",
     "animate.css": "^4.1.1",
     "emailjs-com": "^2.6.3",
+    "firebase": "^8.6.3",
+    "ngx-captcha": "^9.0.1",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
