@@ -1,30 +1,28 @@
 /* .middle-head {
     background-color:#2D4DD8;
 } */
-.main-nav{
-       /* background-color: #258BC9; */
-       background: linear-gradient(
-96.87deg
-,#2c73d6,#2365bd);
-    /* background-color:  #007cba; */
-    height: 70%;
-    margin-top: 32px;
-    border-radius: 10px;
+.main-nav {
+  /* background-color: #258BC9; */
+  background: linear-gradient(96.87deg, #2c73d6, #2365bd);
+  /* background-color:  #007cba; */
+  height: 70%;
+  margin-top: 32px;
+  border-radius: 10px;
 }
 .image {
-    width: 53%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+  width: 53%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 a {
-    color: #14212b;
-    text-decoration: none;
-    transition: 0.5s;
-    color: white;
+  color: #14212b;
+  text-decoration: none;
+  transition: 0.5s;
+  color: white;
 }
-.custom{
-    background-color: #0026B5;
+.custom {
+  background-color: #0026b5;
 }
 /* .name{
 
@@ -40,23 +38,23 @@ a {
 } */
 
 .card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: #fff;
-    background-clip: border-box;
-    border: 1px solid rgba(0,0,0,.125);
-    border-radius: .25rem;
-    width: 443%;
-    margin-left: -158%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  width: 443%;
+  margin-left: -158%;
 }
 
-.imageHight{
-    width: 50%;
-    
-    border:3px solid white;
+.imageHight {
+  width: 50%;
+
+  border: 3px solid white;
 }
 /* .subname{
    
@@ -67,45 +65,46 @@ a {
     margin-top: -7%;
 } */
 .btn {
-    border: none;
-    outline: none;
-    padding: 10px 16px;
-    background-color: #f1f1f1;
-    cursor: pointer;
-    font-size: 18px;
-  }
-  
-  
-  .active, .btn:hover {
-    background-color: rgb(28, 12, 243);
-    color: white;
-    
-  }
-.header .navigation .main-menu>.menu-item>a {
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 90px;
-    display: inline-flex;
-    padding: 0 30px;
-    cursor: pointer;
-}
-.logo1{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-.name{
-    font-size: 28px;
-    font-weight: 600;
-    margin-top: 5%;
-} 
-.subname{
-    font-size: 14px;
-    font-weight: 500;
-    margin-left: 13%;
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
 }
 
+.active,
+.btn:hover {
+  /* background-color: rgb(28, 12, 243); */
+  /* color: white; */
+  border-bottom: 2px solid white;
+}
+.header .navigation .main-menu > .menu-item > a {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 90px;
+  display: inline-flex;
+  padding: 0 30px;
+  cursor: pointer;
+}
+.logo1 {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.name {
+  font-size: 28px;
+  font-weight: 600;
+  margin-top: 5%;
+}
+.subname {
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 25%;
+  margin-top: -13px;
+  color: darkgrey;
+}
 
 /* @media only screen and (max-width: 411px) {
     .name {
@@ -142,10 +141,9 @@ a {
 
 
 /* */
- /* @media only screen and (max-width: 540px) {  
+/* @media only screen and (max-width: 540px) {  
 
  } */
-
 
 /* @media only screen and (min-width: 768px) {
     .image{
