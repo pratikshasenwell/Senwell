@@ -27,6 +27,7 @@ ul li:before {
     font-size: 20px;
     font-family: "Helvetica Now Displayed", Sans-serif;
     text-align: center;
+    margin-bottom: 10%;
 }
 .text-blue {
     font-family: "Helvetica Now Displayed", Sans-serif;
@@ -53,6 +54,7 @@ ul li:before {
     top: 60px;
     height: 75%;
     width: 100%;
+    margin-top: 11%;
     
 }
 /* .text-orange1[_ngcontent-cwi-c18] {
@@ -74,7 +76,7 @@ ul li:before {
     width: 20px;
     vertical-align: top;
     display: inline-block;
-
+   
 }
 img {
     max-width: 100%;
@@ -98,6 +100,23 @@ img {
 h5{
     font-size: 16px;
     line-height: -30%;
+}
+p{
+    text-align: justify;
+}
+/* .process-box{
+    text-align: justify;
+}
+h4{
+    text-align: center;
+}
+.icon text-orange{
+    text-align: center;
+} */
+.section-padding{
+    margin-top:-10%;
+     margin-bottom:-8%
+
 }
 
 

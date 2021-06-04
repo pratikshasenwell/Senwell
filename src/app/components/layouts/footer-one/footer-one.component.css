@@ -8,16 +8,22 @@
     font-size: 21px;
     font-weight: 600;
     margin-top: 8%;
+    margin-left: -2%;
 }
 .subname{
-    color: white;
-    font-size: 14px;
+    /* color: white;
+    font-size: 14px; */
+    color: #d2c6c6;
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 11%;
 }
 img {
     max-width: 70%;
     width: auto;
     height: auto;
     transition: 0.5s;
+    margin-top: -20%;
 }
 
 #back-topp a {

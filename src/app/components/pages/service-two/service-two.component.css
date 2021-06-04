@@ -1,3 +1,4 @@
+
 .progress-bar-sec{
     margin-top: -10%;
 }
@@ -57,3 +58,12 @@ ul li:before {
 .image-fit{
     height: 65%;
 }
+.values-block-inner{
+    height: 70vh;
+    margin-bottom: 5%;
+}
+p{
+    text-align: justify;
+}
+
+
