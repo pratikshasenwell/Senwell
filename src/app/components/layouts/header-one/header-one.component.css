@@ -102,7 +102,8 @@ a {
 }
 .backg {
     
-    background-image: linear-gradient(to right, #ffffff, #e4e5f6, #c2ceef, #97b9e7, #5ea6dd);
+    /* background-image: linear-gradient(to right, #ffffff, #e4e5f6, #c2ceef, #97b9e7, #5ea6dd); */
+    background-color: #101112;
 }
 .name{
     /* font-size: 28px;
