@@ -91,3 +91,10 @@ ul li:before {
     margin-bottom: 9vh;
     height: 90vh;
 }
+a{
+    color: rgb(57, 57, 240);
+}
+.backcareer{
+    color: black;
+    margin-top: 4%;
+ }

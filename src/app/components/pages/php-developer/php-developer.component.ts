@@ -26,8 +26,8 @@ export class PhpDeveloperComponent implements OnInit {
    
   }
   uploadCandidateCv(event: any) {
-    // 
-    this.authService.UploadCandidateFile(event)
+    const php = `/php/${event.target.files[0].name}`;
+    this.authService.UploadCandidateFile(event,php)
   }
   saveReactcandidate() {
     debugger

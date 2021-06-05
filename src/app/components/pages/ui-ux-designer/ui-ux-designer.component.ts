@@ -27,9 +27,9 @@ export class UiUxDesignerComponent implements OnInit {
 
   }
   uploadCandidateCv(event: any) {
-    // 
-    this.authService.UploadCandidateFile(event)
-  }
+    const php = `/UI/${event.target.files[0].name}`;
+    this.authService.UploadCandidateFile(event,php)
+   }
   saveReactcandidate() {
     debugger
     // this.ReactCandidate.patchValue({file:this.authService.docDownloadUrl$.value})

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-portfolio-one',
@@ -13,3 +14,8 @@ export class PortfolioOneComponent implements OnInit {
   }
 
 }
+
+
+
+
+

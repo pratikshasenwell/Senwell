@@ -13,8 +13,8 @@ export class AuthServiceService {
 
     this.firestore.collection('employee').doc().set({ candidatedata })
   }
-  UploadCandidateFile(file: any) {
-    const filePath = `/uploads/${file.target.files[0].name}`;
+  UploadCandidateFile(file: any,filePath:any) {
+    // const  = `/uploads/${file.target.files[0].name}`;
     const storageRef = this.angularFireStorage.ref(filePath);
     const uploadTask = this.angularFireStorage.upload(filePath, file.target.files[0]);
     setTimeout(()=>{

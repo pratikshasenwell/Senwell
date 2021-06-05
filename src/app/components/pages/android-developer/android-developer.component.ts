@@ -27,8 +27,8 @@ export class AndroidDeveloperComponent implements OnInit {
    
   }
   uploadCandidateCv(event: any) {
-    // 
-    this.authService.UploadCandidateFile(event)
+    const php = `/android-developer/${event.target.files[0].name}`;
+    this.authService.UploadCandidateFile(event,php)
   }
   saveReactcandidate() {
     debugger

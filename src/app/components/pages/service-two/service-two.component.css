@@ -59,7 +59,7 @@ ul li:before {
     height: 65%;
 }
 .values-block-inner{
-    height: 70vh;
+    /* height: 70vh; */
     margin-bottom: 5%;
 }
 p{
