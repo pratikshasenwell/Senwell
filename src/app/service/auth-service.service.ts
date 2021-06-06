@@ -16,11 +16,12 @@ export class AuthServiceService {
   UploadCandidateFile(file: any) {
     const filePath = `/uploads/${file.target.files[0].name}`;
     const storageRef = this.angularFireStorage.ref(filePath);
-    const uploadTask = this.angularFireStorage.upload(filePath, file);
-    
+    const uploadTask = this.angularFireStorage.upload(filePath, file.target.files[0]);
+    setTimeout(()=>{
     let url = storageRef.getDownloadURL().subscribe(data => {
       this.docDownloadUrl$.next(data)
     })
+  },3000)
 
   }
 }
