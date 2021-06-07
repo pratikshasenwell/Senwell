@@ -934,9 +934,10 @@ label.custom-checkbox input:checked ~ .checkmark:after {
     z-index: 10;
 }
 /*header topbar*/
-.header .topbar{
-    padding-top: 10px;
-}
+/* .header .topbar{
+    padding-top: 10px; */
+
+/* } */
 .header .topbar .left-side>li{
     margin-bottom: 10px;
     padding-right: 10px;

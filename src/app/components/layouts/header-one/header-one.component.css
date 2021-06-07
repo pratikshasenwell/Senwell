@@ -1,11 +1,8 @@
-/* .middle-head {
-    background-color:#2D4DD8;
-} */
+.custom-flex{
+    padding: 5px 5px;
+}
 .main-nav{
-       /* background-color: #258BC9; */
-       /* background: linear-gradient(
-96.87deg
-,#2c73d6,#2365bd); */
+    
 
 
 background: linear-gradient( 96.87deg,#3494e6,#984937);
@@ -97,20 +94,40 @@ a {
     width: 100%;
     object-fit: cover;
     object-position: center;
+    padding-top: 10px;
+    padding-bottom: 2px;
     /* border-radius: 50%; */
     /* z-index: 2 */
 }
 .backg {
     
     
-    background-color: #101112;
+    /* background-color: #101112; */
+    
+    /* background: linear-gradient(to right, #eff0f1 11%, #19a0b8 58%); */
+    /* background: linear-gradient( 96.87deg, #ffffff,#3494e6,#984937); */
+    background-image: linear-gradient(to right, #ffffff, #e8e8fa, #ced2f6, #aebef3, #87abef, #869ae5, #8889d8, #8c77ca, #a862a6, #b1517e, #aa4958, #984937);
+
+    
 }
+.colorForTop{
+    /* background-color: rgb(73, 64, 64); */
+    background-image: linear-gradient(to right, #ffffff, #e8e8fa, #ced2f6, #aebef3, #87abef, #869ae5, #8889d8, #8c77ca, #a862a6, #b1517e, #aa4958, #984937);
+
+    
+}
+
+
+
+/* .backgg{
+    background-color: black;
+} */
 .name{
   
     font-size: 28px;
     font-weight: 600;
-    margin-top: -4%;
-    margin-left: -4%;
+    margin-top: -6%;
+    /* margin-left: -4%; */
 } 
 .subname {
     font-size: 14px;
@@ -119,7 +136,10 @@ a {
     margin-top: -13px;
     color: #a9a9a9;
 }
-
+.pos{
+    position: relative;
+    right: 2vw;
+}
 
 
   
@@ -142,9 +162,11 @@ a {
   .navigation a.active {
     border-bottom: 3px solid #ffff;
 }
-.theme-btn.btn-orange {
+
+.theme-btn.btn-orange{
     color: #fff;
     background-color: #5d6066;
+    border-radius: 10px;
 }
   
   
