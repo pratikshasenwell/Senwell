@@ -34,10 +34,7 @@ ul li:before {
     font-size: 24px;
 
 }
-/* .text-orange {
-    color: #1e4ad4;
-    font-weight: 700;
-} */
+
 .brand-image
 {
     margin-top:18%;
@@ -57,10 +54,7 @@ ul li:before {
     margin-top: 11%;
     
 }
-/* .text-orange1[_ngcontent-cwi-c18] {
-    color: #f7901b;
-    font-weight: 700;
-} */
+
 .section-header .section-heading .title {
     font-size: 30px;
 }
@@ -104,22 +98,28 @@ h5{
 p{
     text-align: justify;
 }
-/* .process-box{
-    text-align: justify;
-}
-h4{
-    text-align: center;
-}
-.icon text-orange{
-    text-align: center;
-} */
+
 .section-padding{
     margin-top:-10%;
      margin-bottom:-8%
 
 }
+.requirement{
+    background: #f9bbbb;
+}
+.planning{
+    background: #b2b2ef;
+}
+.prototyping{
+    background: #eac178;
+}
+.development{
+    background: #9ce39c;
+}
+.release{
+    background: #a2e3e3;
+}
 
 
 
-
-    
+ 

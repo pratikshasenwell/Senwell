@@ -90,18 +90,10 @@ a{
     color: rgb(57, 57, 240);
 }
 
-/* @media only screen and (max-width: 410px) {
-    img {
-      
-        margin-left: -152%;
-    }
-    .imgb {
-        max-width: 53%;
-        width: auto;
-        height: auto;
-        /* transition: 0.5s; */
-        /* margin-left: 43%; */
-        /* margin-top: -289%; */
-        
-  /* } */
-/* } */
+.col-5{
+    margin-top: -25%;
+    margin-left: 0%;
+}
+.col-5 p{
+    text-align: justify;
+}

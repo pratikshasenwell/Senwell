@@ -71,11 +71,7 @@ p{
     position: relative;
     padding-top: 62px;
 }
-/* .boldtext{
-    
-    font-weight: 600;
-    font-size: 25px;
-} */
+
 .websolution{
     margin-top: 6%;
     background: #5fbcff;
@@ -118,10 +114,7 @@ p{
     margin-left: 10%;
     margin-top: 4%;
 }
-/* .webdesign{
-     margin-left: 12%; 
-    
-} */
+
 .webdesigncontent{
     margin-top: 10%;
    
@@ -136,9 +129,7 @@ p{
     font-size: 30px;
 
 }
-/* .content{
-    margin-top: 4%;
-} */
+
 .contentc{
     margin-top: 10%;
    
@@ -157,7 +148,7 @@ p{
 }
 .websupportc{
     margin-top: 10%;
-   
+
     color: white;
 }
 .websupportc h3{
