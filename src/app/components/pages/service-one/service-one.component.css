@@ -37,3 +37,6 @@ h6 {
     object-fit: cover;
     object-position: center;
 }
+p{
+    text-align: justify;
+}

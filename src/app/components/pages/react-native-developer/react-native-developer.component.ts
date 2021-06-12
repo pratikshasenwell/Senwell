@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms'
+import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms'
 import { AuthServiceService } from './../../../service/auth-service.service'
 @Component({
   selector: 'app-react-native-developer',
@@ -8,27 +8,37 @@ import { AuthServiceService } from './../../../service/auth-service.service'
 })
 export class ReactNativeDeveloperComponent implements OnInit {
 
+  // this.ReactCandidate=new ReactCandidate({
+
+  // });
+
   siteKey: string;
   ReactCandidate: FormGroup
 
+
+
   constructor(private formbuilder: FormBuilder, private authService: AuthServiceService) {
     this.ReactCandidate = this.formbuilder.group({
-      name: ['', Validators.required],
-      email: ['', Validators.required],
-      company: ['', Validators.required],
-      ctc: ['', Validators.required],
-      experience: ['', Validators.required],
-      file: ['', Validators.required]
+      name: new FormControl('', Validators.required),
+      email:new FormControl ('', [Validators.required,Validators.email]),
+      company:new FormControl ('', Validators.required),
+      ctc: new FormControl('', Validators.required),
+      experience:new FormControl ('', Validators.required),
+      file:new FormControl ('', Validators.required)
 
     })
+
+    // Reactforms= new  Reactforms({
+
+    // })
   }
 
   ngOnInit(): void {
     this.siteKey = '6Lc6gAsbAAAAAIbI2AbvKITD9p7wWyhhaJ14uCO2';
   }
   uploadCandidateCv(event: any) {
-    // 
-    this.authService.UploadCandidateFile(event)
+    const php = `/react/${event.target.files[0].name}`;
+    this.authService.UploadCandidateFile(event,php)
   }
   saveReactcandidate() {
     debugger

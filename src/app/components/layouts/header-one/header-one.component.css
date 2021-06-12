@@ -120,39 +120,24 @@ a {
   color: darkgrey;
 }
 
-/* @media only screen and (max-width: 411px) {
-    .name {
-        
-            color: black;
-            font-family: rubik;
-            margin-left: 57%;
-            margin-top: -41%;
-            font-size: 42px;
-            vertical-align: middle;
-            width: 144%;
-            font-weight: 600;    
-    }
-   
-    .subname {
-      font-size: 9px;
-    }
+.colorForTop {
+  /* background-color: rgb(73, 64, 64); */
+  background-image: linear-gradient(
+    to right,
+    #ffffff,
+    #e8e8fa,
+    #ced2f6,
+    #aebef3,
+    #87abef,
+    #869ae5,
+    #8889d8,
+    #8c77ca,
+    #a862a6,
+    #b1517e,
+    #aa4958,
+    #984937
+  );
 }
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 414px) {
-    
-    .subname {
-        margin-left: 70%;
-    }
-}
-
-
 
 /* */
 /* @media only screen and (max-width: 540px) {  

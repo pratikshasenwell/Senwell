@@ -1,3 +1,4 @@
+
 .progress-bar-sec{
     margin-top: -10%;
 }
@@ -57,3 +58,170 @@ ul li:before {
 .image-fit{
     height: 65%;
 }
+.values-block-inner{
+    /* height: 70vh; */
+    margin-bottom: 5%;
+}
+p{
+    text-align: justify;
+}
+.process-steps {
+    float: left;
+    width: 100%;
+    position: relative;
+    padding-top: 62px;
+}
+
+.websolution{
+    margin-top: 6%;
+    background: #5fbcff;
+
+}
+.tree {
+    margin-top: 4%;
+   
+}
+.treecontent h3{
+    color: white;
+    font-size: 30px;
+}
+.treecontent p{
+    color: white;
+    font-size: 16px;
+}
+
+
+.treecontent{
+    margin-top: 10%;
+    color: white;
+}
+.webdevcontent{
+    margin-top: 10%;
+   
+    color: white;
+}
+.webdevcontent p{
+    color: white;
+    font-size: 16px;
+   
+}
+.webdevcontent h3{
+    color: white;
+    font-size: 30px;
+  
+}
+.webdev{
+    margin-left: 10%;
+    margin-top: 4%;
+}
+
+.webdesigncontent{
+    margin-top: 10%;
+   
+    color: white;
+}
+.webdesigncontent p{
+    color: white;
+    font-size: 16px;
+}
+.webdesigncontent h3{
+    color: white;
+    font-size: 30px;
+
+}
+
+.contentc{
+    margin-top: 10%;
+   
+    color: white;
+}
+.content p{
+    color: white;
+    font-size: 16px;
+}
+.content h3{
+    color: white;
+    font-size: 30px;
+}
+.websupport{
+    margin-top: 4%;
+}
+.websupportc{
+    margin-top: 10%;
+
+    color: white;
+}
+.websupportc h3{
+    color: white;
+    font-size: 30px;
+}
+.websupportc p{
+    color: white;
+    font-size: 16px;
+}
+ul li:before {
+    position: absolute;
+    left: -15px;
+    color: #eaeaf9;
+    font-weight: bold;
+}
+.center{
+    text-align: center;
+}
+
+.values-block-inner{
+    /* background-image: linear-gradient(to right top, #b0c0d9, #98b0e3, #869feb, #d6d9ed, #2b1bcb); */
+    background-color: #6a93cb;
+background-image: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);
+}
+.iphone{
+margin-top: -10%;
+}
+.iphonec{
+    margin-top: 10%;
+   color: white;
+}
+.iphonec p{
+    color: white;
+    font-size: 16px;
+}
+.iphonec h3{
+    color: white;
+    font-size: 30px;
+}
+ .android{
+    margin-top: 4%;
+} 
+.androidc{
+    margin-top: 4%;
+    color: white;
+}
+.androidc h3{
+    color: white;
+    font-size: 30px;
+
+}
+.androidc p{
+    color: white;
+    font-size: 16px;
+}
+.rmweb{
+    margin-top: 15%;
+}
+.rmwebc{
+    margin-top: 4%;
+    color: white;
+
+}
+.rmwebc p{
+    color: white;
+    font-size: 16px;
+}
+.rmwebc h3{
+    color: white;
+    font-size: 30px;
+}
+
+
+
+

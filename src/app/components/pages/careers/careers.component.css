@@ -7,9 +7,9 @@
     transform: scale(1.1);
     box-shadow: 0 25px 13px -16px rgb(0 0 0 / 15%);
 }
-i{
+/* i{
     color: blue;
-}
+} */
 h2{
     font-size: 25px;
     font-weight: 700;
@@ -86,19 +86,14 @@ img {
     padding: 0 30px;
     cursor: pointer;
 }
+a{
+    color: rgb(57, 57, 240);
+}
 
-/* @media only screen and (max-width: 360px) {
-    img {
-      
-        margin-left: -152%;
-    }
-    .imgb {
-        max-width: 53%;
-        width: auto;
-        height: auto;
-        transition: 0.5s;
-        margin-left: 43%;
-        margin-top: -289%;
-        
-  }
-} */
+.col-5{
+    margin-top: -25%;
+    margin-left: 0%;
+}
+.col-5 p{
+    text-align: justify;
+}

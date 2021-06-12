@@ -1,4 +1,4 @@
-<app-header-one></app-header-one>
+<!-- <app-header-one></app-header-one> -->
 <section class="services servicepage">
     <div class="container">
         <div class="row">
@@ -53,7 +53,7 @@
               
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-8 col-sm" style="margin-top: 2%;">
+                        <div class="col-lg-12 col-sm" style="margin-top: 2%;">
                             <h4>Android Developer<br>Job Description</h4>
 
                             <ul class="list-group">
@@ -84,73 +84,68 @@
  
                                    </ul>
                              </div>
-                            
+                             <p>Interested candidates should submit a completed resume and cover letter to   <a href="mailto:hr@senwellsys.com" class="text-blue" >
+                                hr@senwellsys.com
+                                  </a></p>
+                                  <p> <u><a class="backcareer" routerLink='/careers' routerLinkActive="active"
+                                    [routerLinkActiveOptions]="{exact: true}">&lt;&lt; Back to careers</a></u></p>
                            
                         </div>
 
 
-                        <div class="col-lg-4 col-sm" style="margin-top: 12%; background-color:  #404CDC!important;margin-bottom: 100%;height: 80vh;">
-                            <form>
-                                <div class="form-group" >
+                        <!-- <div class="col-lg-4 col-sm">
+                            <form [formGroup]="ReactCandidate">
+                                <div class="form-group">
                                     <h6 style="color: white;
                                     font-weight: 600;margin-top: 5%;">Apply Now</h6>
-                                    <!-- <label for="exampleInputEmail1">Name</label> -->
-                                    <input type="Name" class="form-control" id="name" placeholder=" Name ">
 
-                                </div>
+                                    <input type="text" class="form-control" formControlName="name" id="name"
+                                        placeholder=" Name ">
+
+                                     </div>
 
                                 <div class="form-group">
-                                    <!-- <label for="exampleInputEmail1">Email address</label> -->
                                     <input type="email" class="form-control" id="exampleInputEmail1"
-                                        aria-describedby="emailHelp" placeholder="Email">
+                                        formControlName="email" aria-describedby="emailHelp" placeholder="Email">
                                 </div>
                                 <div class="form-group">
 
-                                    <!-- <label for="exampleInputEmail1">City</label> -->
-                                    <input type="Name" class="form-control" id="name" placeholder=" Current Company ">
+                                    
+                                    <input type="text" class="form-control" formControlName="company" id="name"
+                                        placeholder=" Current Company ">
                                 </div>
                                 <div class="form-group">
 
-                                    <!-- <label for="exampleInputEmail1">City</label> -->
-                                    <input type="Name" class="form-control" id="name" placeholder=" Current CTC ">
+                                    
+                                    <input type="text" class="form-control" formControlName="ctc" id="name"
+                                        placeholder=" Current CTC ">
                                 </div>
                                 <div class="form-group">
 
-                                    <select class="form-control" id="exampleFormControlSelect1">
+                                    <select class="form-control" id="exampleFormControlSelect1"
+                                        formControlName="experience">
                                         <option>Experience</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
+                                        <option value=" 0">0</option>
+                                        <option value=" 1">1</option>
+                                        <option value=" 2">2</option>
+                                        <option value=" 3">3</option>
+                                        <option value=" 4">4</option>
+                                        <option value=" 5">5</option>
                                     </select>
                                 </div>
-                                <form>
-                                    <div class="form-group">
-                                        <label for="exampleFormControlFile1"></label>
-                                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                                    </div>
-                                </form>
-                                <div class="g-recaptcha" data-callback="verifyCallback"
-                                    data-sitekey="6LeICboUAAAAADDflV69_ukVYEt_kr7K-P2AuwVo"
-                                    style="transform:scale(0.79);-webkit-transform:scale(0.79);transform-origin:0 0;-webkit-transform-origin:0 0;">
-                                    <div style="width: 304px; height: 78px;">
-                                        <div><iframe title="reCAPTCHA"
-                                                src="https://www.google.com/recaptcha/api2/anchor?ar=2&amp;k=6LeICboUAAAAADDflV69_ukVYEt_kr7K-P2AuwVo&amp;co=aHR0cHM6Ly93d3cuY29kaWFudC5jb206NDQz&amp;hl=en&amp;v=sG0iO6gHcGdWJzjJjW9AY49S&amp;size=normal&amp;cb=ba8xkolhd4az"
-                                                width="304" height="78" role="presentation" name="a-dxmsnigx4g8w"
-                                                frameborder="0" scrolling="no"
-                                                sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
-                                        </div><textarea id="g-recaptcha-response" name="g-recaptcha-response"
-                                            class="g-recaptcha-response"
-                                            style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
-                                    </div><iframe style="display: none;"></iframe>
+
+                                <div class="form-group">
+                                    <label for="exampleFormControlFile1"></label>
+                                    <input type="file" class="form-control-file" (change)="uploadCandidateCv($event)" formControlName="file"  id="exampleFormControlFile1">
                                 </div>
 
+                              
 
-
-                         <button type="submit" class="btn btn-primary">Submit</button>
+                                <button type="submit" class="theme-btn btn-white-orange" (click)="saveReactcandidate()">Submit</button>
                             </form>
+                           
 
-                        </div>
+                        </div> -->
 
                     </div>
                 </div>
