@@ -206,9 +206,9 @@ body {
 }
 
 .navigation a:hover {
-  border-bottom: 5px solid #ff4815;
+  border-bottom: 5px solid #fff;
 }
 
 .navigation a.active {
-  border-bottom: 5px solid #ff4815;
+  border-bottom: 5px solid #fff;
 }
