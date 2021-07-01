@@ -27,6 +27,12 @@ import { AndroidDeveloperUkComponent } from './components/pages/android-develope
 import { IosDeveloperComponent } from './components/pages/ios-developer/ios-developer.component';
 import { UiUxDesignerComponent } from './components/pages/ui-ux-designer/ui-ux-designer.component';
 import { NgxCaptchaModule } from 'ngx-captcha';
+import { PopupcComponent } from './components/pages/popupc/popupc.component';
+import { AriaDescriber } from '@angular/cdk/a11y';
+import { AdminPanelComponent } from './components/pages/admin-panel/admin-panel.component';
+import { DashboardComponent } from './components/pages/dashboard/dashboard.component';
+import{AuthGuard} from './auth.guard';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 
@@ -56,7 +62,12 @@ const routes: Routes = [
   {path:'BuisnessDevelopmentExecutiveUkComponent',component:BuisnessDevelopmentExecutiveUkComponent},
   {path:'AndroidDeveloperUkComponent',component:AndroidDeveloperUkComponent},
   {path:'IosDeveloperComponent',component:IosDeveloperComponent},
-  {path:'UiUxDesignerComponent',component:UiUxDesignerComponent}
+  {path:'UiUxDesignerComponent',component:UiUxDesignerComponent},
+  {path:'PopupcComponent',component:PopupcComponent},
+  {path:'AdminPanel',component:AdminPanelComponent},
+  {path:'Dashboard', canActivate : [AuthGuard], component:DashboardComponent},
+  {path:'**',component:PageNotFoundComponent}
+  
 ];
 
 @NgModule({

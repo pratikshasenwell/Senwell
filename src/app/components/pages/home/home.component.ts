@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
+import {FileValidator} from './file-input.validator'
 
 @Component({
   selector: 'app-home',
@@ -6,13 +8,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
+  frm = new FormGroup({});
+  
   constructor() {
-    
-    
-   }
-
-  ngOnInit(): void {
+    this.buildForm();
   }
-
-}
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
+  
+  private buildForm() {
+      this.frm = new FormGroup({
+          file: new FormControl("", [FileValidator.validate])
+      });
+  }
+}      

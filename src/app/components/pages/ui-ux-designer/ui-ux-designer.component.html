@@ -55,44 +55,43 @@
                 <br> -->
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-12 col-sm" style="margin-top: 2%;">
+                        <div class="col-lg-8 col-md-6" style="margin-top: 2%;">
                             <h4>Senior Web UI/UX Designer<br>Job Description</h4>
                           
-                            <p>We are looking for performers with minimum 2-5 years of experience in online bidding, bid
-                                Writing, bid preparation, bid analysis, bid process management, proposal drafting &
-                                management. The incumbent should have rich experience of acquiring new projects from
-                                online bidding websites like Freelancer, Odesk, Elance. The incumbent would be
-                                responsible for lead closing & conversion, client response, follow up & account
-                                management across US, UK, Australia on Elance, Odesk, Freelancer & Guru.</p>
-                            <h5>Experience</h5>
-                            <p>2-5 Years experience as Business Development Executive</p>
-                            <h5> Keyskills:</h5>
-                            <p>Excellent Communication skills, exposure et Odesk, elance and Freelancer etc.</p>
-                            <h5>Desired Candidate Profile</h5>
-                           <p style="font-size: 17px;"><strong>Roles & Responsibilities:</strong></p> 
+                           
+                          
+                            <h5>Job Description</h5>
                             <div class="container">
                                 <ul class="list-group">
-                                    <li>To design & develop web pages, graphics, multimedia, GUIs</li>
+
+                                  <li> To design & develop web pages, graphics, multimedia, GUIs </li>
                                   <li>Manage & update website contents </li>
                                   <li> To Upload the site onto a server & register it with different search engines</li>
-
                                   <li> Collaborate with writers and technical teams</li>
-                                  <li> Integrate UI/UX best practices</li>
-
-                                  
-
-                                  </ul>
+                                  <li>Integrate UI/UX best practices </li>
+                                </ul>
                             </div>
+                            <h5>Experience</h5>
+                            <p>1-2 years experience as Web UI/UX Designer</p>
+                            <h5> Keyskills:</h5>
+                            <p>Proficient with design tools such as Corel draw, Photoshop, Illustrator, Adobe XD, Sketch, HTML, Bootstrap, Javascript</p>
+                            <h5>Desired Candidate Profile</h5>
+                            <h5>Education:</h5>
+                            <p>B.Tech/B.E., Diploma- Graphic/Web designing, B.Sc, B.C.A, B.Com></p>
                             <h5>Profile Requisites:</h5>
-                            
                              <div class="container">
+                               
                                  <ul class="list-group">
-                                     <li> Should be proficient in project analysis and execution. </li>
-                                     <li> Strong Interpersonal/Analytical skill. </li>
-                                     <li> Good understanding of website/ web application development processes. </li>
-                                     <li> Business oriented and comprehensive writing abilities in order to generate various proposals. </li>
-                                     <li> Experience in Client communication </li>
-                                     <li> Understanding of marketing concepts </li>
+                                    
+                                     
+                                    <li> Exposure in Photoshop, Illustrator, Adobe XD, Sketch, HTML, Bootstrap </li>
+                                    <li> In sync with recent design standards & trends </li>
+                                    <li> Understanding of user experience, usability & responsive web design </li>
+                                    <li> Good Design Sense, Innovative in Conceptualising New Ideas </li>
+                                   
+                                   
+                                   
+                                   
                                    
  
                                    </ul>
@@ -107,60 +106,71 @@
                         </div>
 
 
-                        <!-- <div class="col-lg-4 col-sm">
-                            <form [formGroup]="ReactCandidate">
-                                <div class="form-group">
-                                    <h6 style="color: white;
-                                    font-weight: 600;margin-top: 5%;">Apply Now</h6>
-
-                                    <input type="text" class="form-control" formControlName="name" id="name"
-                                        placeholder=" Name ">
-
-                                     </div>
-
-                                <div class="form-group">
-                                    <input type="email" class="form-control" id="exampleInputEmail1"
-                                        formControlName="email" aria-describedby="emailHelp" placeholder="Email">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="jumbotron" style="background: #95c3f5;">
+                                <div class="container">
+                
+                                    <h3 style="text-align: center;">Apply</h3>
+                
+                                    <form action="" [formGroup]="ReactCandidate">
+                                        <mat-form-field appearance="outline" class="width_of_input">
+                                            <mat-label>Name</mat-label>
+                                            <input matInput formControlName="name" />
+                                            <!-- <mat-error *ngIf=""></mat-error>Required</mat-error> -->
+                                            <mat-error *ngIf="ReactCandidate.get('name').invalid">
+                                                Please enter valid Name
+                                            </mat-error>
+                                        </mat-form-field>
+                                         <mat-form-field appearance="outline" class="Email" class="width_of_input">
+                                            <mat-label>Email</mat-label>
+                                            <input matInput formControlName="Email" />
+                                            <mat-error *ngIf="ReactCandidate.get('Email').invalid">
+                                                Please enter a valid email address
+                                            </mat-error>
+                
+                                        </mat-form-field>
+                
+                
+                                        <mat-form-field appearance="outline" class="InputBox" class="width_of_input">
+                                            <mat-label>Company </mat-label>
+                                            <input matInput formControlName="Company" />
+                                            <mat-error *ngIf="ReactCandidate.get('Company').invalid">
+                                                Please enter a company name
+                                            </mat-error>
+                
+                                        </mat-form-field>
+                
+                                        <mat-form-field appearance="outline" class="InputBox" class="width_of_input">
+                                            <mat-label>CTC</mat-label>
+                                            <input matInput formControlName="CTC" />
+                                            <mat-error *ngIf="ReactCandidate.get('CTC').invalid">
+                                                Please enter a valid CTC
+                                            </mat-error>
+                                        </mat-form-field>
+                
+                
+                
+                                        <mat-form-field appearance="outline" class="width_of_input">
+                                            <mat-label>Experience</mat-label>
+                                            <mat-select formControlName="dropDown" name="food">
+                                                <mat-option *ngFor="let food of foods" [value]="food.value">
+                                                    {{food.viewValue}}
+                                                </mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+                
+                                        <div class="files">
+                                            <input type="file" class="upload-box" (change)="uploadCandidateCv($event)" formControlName="file"/>
+                                        </div>
+                
+                                       <button mat-raised-button color="primary" (click)="saveReactcandidate()"  [disabled]="!ReactCandidate.valid">Submit</button>
+                 
+                
+                
+                                    </form>
                                 </div>
-                                <div class="form-group">
-
-                                    
-                                    <input type="text" class="form-control" formControlName="company" id="name"
-                                        placeholder=" Current Company ">
-                                </div>
-                                <div class="form-group">
-
-                                    
-                                    <input type="text" class="form-control" formControlName="ctc" id="name"
-                                        placeholder=" Current CTC ">
-                                </div>
-                                <div class="form-group">
-
-                                    <select class="form-control" id="exampleFormControlSelect1"
-                                        formControlName="experience">
-                                        <option>Experience</option>
-                                        <option value=" 0">0</option>
-                                        <option value=" 1">1</option>
-                                        <option value=" 2">2</option>
-                                        <option value=" 3">3</option>
-                                        <option value=" 4">4</option>
-                                        <option value=" 5">5</option>
-                                    </select>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="exampleFormControlFile1"></label>
-                                    <input type="file" class="form-control-file" (change)="uploadCandidateCv($event)" formControlName="file"  id="exampleFormControlFile1">
-                                </div>
-
-                              
-
-                                <button type="submit" class="theme-btn btn-white-orange" (click)="saveReactcandidate()">Submit</button>
-                            </form>
-                           
-
-                        </div> -->
-
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

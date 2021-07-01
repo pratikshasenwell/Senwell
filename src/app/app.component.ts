@@ -3,6 +3,7 @@ import { Router, NavigationStart, NavigationCancel, NavigationEnd } from '@angul
 import { Location, LocationStrategy, PathLocationStrategy } from '@angular/common';
 import { filter } from 'rxjs/operators';
 import './../assets/smtp.js';
+import { AuthServiceService } from './service/auth-service.service.js';
 declare let $: any;
 
 @Component({
@@ -20,8 +21,10 @@ export class AppComponent implements OnInit {
   location: any;
   routerSubscription: any;
 
-  constructor(private router: Router) {
-  }
+  constructor(private router: Router,
+    private ap:AuthServiceService) {
+this.ap.getCoffeeOrders();
+     }
 
   ngOnInit(){
       this.recallJsFuntions();

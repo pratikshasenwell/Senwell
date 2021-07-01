@@ -41,12 +41,20 @@ import { BuisnessDevelopmentExecutiveUkComponent } from './components/pages/buis
 import { AndroidDeveloperUkComponent } from './components/pages/android-developer-uk/android-developer-uk.component';
 import { UiUxDesignerComponent } from './components/pages/ui-ux-designer/ui-ux-designer.component';
 import { FlexLayoutModule } from "@angular/flex-layout";
-// import { registerFirestore } from '@firebase/firestore';
+import { registerFirestore } from '@firebase/firestore';
 import { environment } from 'src/environments/environment';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from "@angular/fire/firestore";
 import { AngularFireStorageModule } from '@angular/fire/storage';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PopupcComponent } from './components/pages/popupc/popupc.component';
+import { AdminPanelComponent } from './components/pages/admin-panel/admin-panel.component';
+import { DashboardComponent } from './components/pages/dashboard/dashboard.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { MatFormField, MatLabel } from '@angular/material/form-field';
+import { MatCommonModule } from '@angular/material/core';
+import { MatDialogModule } from '@angular/material/dialog';
 @NgModule({
   declarations: [
     AppComponent,
@@ -85,10 +93,15 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
     BuisnessDevelopmentExecutiveUkComponent,
     AndroidDeveloperUkComponent,
     UiUxDesignerComponent,
+    PopupcComponent,
+    AdminPanelComponent,
+    DashboardComponent,
+    PageNotFoundComponent,
     
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     HttpClientModule,
     AppRoutingModule,
     FlexLayoutModule,
@@ -96,7 +109,13 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
     FormsModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
-    AngularFireStorageModule
+    AngularFireStorageModule,
+    BrowserAnimationsModule,
+    
+    MatCommonModule,
+    MatDialogModule,
+    
+    
 
   ],
   providers: [

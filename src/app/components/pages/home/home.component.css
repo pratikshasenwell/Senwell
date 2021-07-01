@@ -119,6 +119,25 @@ p{
 .release{
     background: #a2e3e3;
 }
+.tree {
+    margin-top: 4%;
+   
+}
+.treecontent h3{
+    color: white;
+    font-size: 30px;
+}
+.treecontent p{
+    color: white;
+    font-size: 16px;
+}
+
+
+.treecontent{
+    margin-top: 10%;
+    color: white;
+}
+
 
 
 

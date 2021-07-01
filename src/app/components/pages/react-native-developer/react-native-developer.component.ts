@@ -1,6 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms'
 import { AuthServiceService } from './../../../service/auth-service.service'
+import { HttpClient } from '@angular/common/http';
+import { PopupcComponent } from '../popupc/popupc.component';
+import { MatDialog } from '@angular/material/dialog';
+interface Food {
+  value: string;
+  viewValue: string;
+}
+
 @Component({
   selector: 'app-react-native-developer',
   templateUrl: './react-native-developer.component.html',
@@ -8,41 +16,120 @@ import { AuthServiceService } from './../../../service/auth-service.service'
 })
 export class ReactNativeDeveloperComponent implements OnInit {
 
-  // this.ReactCandidate=new ReactCandidate({
+  email = new FormControl('', [Validators.required, Validators.email]);
+  ReactCandidate: FormGroup;
 
-  // });
+  foods: Food[] = [
+    {value: 'Fresher', viewValue: 'Fresher'},
+    {value: '1-2 year', viewValue: '1-2 year'},
+    {value: '2-3 year', viewValue: '2-3 year'},
+    {value: '3-4 year', viewValue: '3-4 year'},
+    {value: '4-5 year', viewValue: '4-5 year'},
+    {value: '5+  year', viewValue: '5+  year'},
 
-  siteKey: string;
-  ReactCandidate: FormGroup
+  ];
+  getErrorMessage() {
+    if (this.email.hasError('required')) {
+      return 'You must enter a value';
+    }
 
-
-
-  constructor(private formbuilder: FormBuilder, private authService: AuthServiceService) {
-    this.ReactCandidate = this.formbuilder.group({
-      name: new FormControl('', Validators.required),
-      email:new FormControl ('', [Validators.required,Validators.email]),
-      company:new FormControl ('', Validators.required),
-      ctc: new FormControl('', Validators.required),
-      experience:new FormControl ('', Validators.required),
-      file:new FormControl ('', Validators.required)
-
-    })
-
-    // Reactforms= new  Reactforms({
-
-    // })
+    return this.email.hasError('email') ? 'Not a valid email' : '';
   }
 
-  ngOnInit(): void {
-    this.siteKey = '6Lc6gAsbAAAAAIbI2AbvKITD9p7wWyhhaJ14uCO2';
+  fileInfo: string;
+// registerForm: FormGroup;
+//ReactCandidate: FormGroup
+submitted = false;
+City: any = ['1 year', '2 year', '3 year', '4 year','5+ year']
+
+constructor(private fb: FormBuilder, private authService: AuthServiceService,public dialog: MatDialog,private http: HttpClient) {
+
+this.ReactCandidate = this.fb.group({
+
+  
+
+  name: ['',Validators.required,],
+
+  Email: ['',[Validators.required, Validators.email]],
+
+  Company: ['',Validators.required,],
+
+  CTC: ['',Validators.required,],
+  dropDown: ['',Validators.required,],
+  
+  file: ['', [Validators.required]],
+    
+});
+ }
+openDialog() {
+    this.dialog.open(PopupcComponent);
   }
-  uploadCandidateCv(event: any) {
-    const php = `/react/${event.target.files[0].name}`;
+  
+ngOnInit() {
+
+}
+
+getsf(){
+  return this.ReactCandidate.controls;
+}
+   
+onFileChange(event) {
+
+  if (event.target.files.length > 0) {
+    const file = event.target.files[0];
+    this.ReactCandidate.patchValue({
+      fileSource: file
+    });
+  }
+}
+   
+submit(data){
+  const formData = new FormData();
+  formData.append('file', this.ReactCandidate.get('fileSource').value);
+    console.log(data)
+}
+
+onFileSelect(input: HTMLInputElement): void {
+
+  function formatBytes(bytes: number): string {
+    const UNITS = ['Bytes', 'kB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];
+    const factor = 1024;
+    let index = 0;
+
+    while (bytes >= factor) {
+      bytes /= factor;
+      index++;
+    }
+
+    return `${parseFloat(bytes.toFixed(2))} ${UNITS[index]}`;
+  }
+
+  const file = input.files[0];
+  this.fileInfo = `${file.name} (${formatBytes(file.size)})`;
+}
+
+get f() { return this.ReactCandidate.controls; }
+ 
+  
+onSubmit(): void {
+    this.submitted = true;
+
+    // stop here if form is invalid
+    if (this.ReactCandidate.invalid) {
+        return;
+    }
+
+    alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.ReactCandidate.value))
+}
+
+uploadCandidateCv(event: any) {
+  debugger
+    const php = `/React-developers/${event.target.files[0].name}`;
     this.authService.UploadCandidateFile(event,php)
   }
   saveReactcandidate() {
-    debugger
-    // this.ReactCandidate.patchValue({file:this.authService.docDownloadUrl$.value})
+   debugger
+   this.openDialog()
     this.authService.SaveCandidateData({formdata:this.ReactCandidate.value,downloadurl:this.authService.docDownloadUrl$.value})
   }
 

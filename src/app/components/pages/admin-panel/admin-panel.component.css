@@ -1,0 +1,218 @@
+.parent{
+    display: flex; 
+    flex-direction:column;
+    width:50%;
+    margin: 0 auto;
+    /* padding-top: 20vh;
+    padding-bottom: 20vh; */
+    /* background-color: rgba(241, 234, 234, 0.897); */
+    /* border-radius: 30px; */
+    /* margin-top: 5vh;
+    margin-bottom: 5vh; */
+
+  
+}
+.container{
+
+    flex-flow: column wrap;
+    justify-content: center;
+    width: 100%;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+
+    
+}
+.adminpage
+{
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+.card{
+     background-color: rgba(0, 0, 0, 0.2); 
+   
+
+}
+
+.main_div_of_form {
+    background-color:#007bff;
+    height: 100vh;
+    width: 100vw;
+  }
+  .width_of_input {
+    width: 100%;
+  }
+  .Img_holder{
+    width: 200px;
+  
+  }
+  .for_Aline{
+    min-width: 320px;
+  }
+  
+  .input_Button {
+    height: 3em;
+    color: white;
+    font-size: 18px;
+    background-color: #007bff;
+  }
+  .button_parent {
+    width: 100%;
+    text-align: end;
+  }
+  
+  .form_div {
+   display: flex; 
+    flex-direction: column ;
+    justify-content: center
+  
+   
+   
+  }
+  .parent_of_input_box {
+    width: 100%;
+    display: flex;
+    gap: 1.4vw;
+  }
+  .form_div_inner {
+    padding: 2vh;
+    margin: 0 auto;
+    width: 50%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+
+    /* display: flex; */
+    /* justify-content: center */
+  }
+  .space_beetween {
+    display: flex;
+    justify-content: space-between;
+  }
+  .border_of_div {
+    border: 3px solid  #007bff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 1vh;
+  }
+  
+  .img_holder{
+    width: 135px;
+  
+  
+  }
+  
+  .iconcolor {
+    color: red;
+  }
+  .isvalid {
+    color: green;
+  }
+  .title_fonts {
+    font-size: 24px;
+  }
+  .title_fonts_downside {
+    font-size: 20px;
+    font-weight: 100;
+  }
+  .single_line_handler{
+      color: rgb(109, 106, 106);
+      margin-top: 1.2em;
+  }
+  .single_line_handler2{
+    color: rgb(109, 106, 106);
+    margin-top: 0.5em;
+  }
+  .Upper {
+    margin-top: 2vh;
+    font-size: 28px;
+    margin-right: 2vw;
+  
+    text-align: end;
+  }
+  
+  .blueCol {
+    color:  #007bff;
+  }
+  
+  .upperDiv {
+    /* background-color: white;
+    border: 1px solid white; */
+    width: 50%;
+    min-width: 320px;
+  
+    margin: 0 auto;
+    height: 16vh;
+    display: flex;
+    justify-content: flex-end;
+    align-content: stretch;
+    flex-direction: column;
+    align-items: flex-end;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    overflow: hidden;
+  
+  }
+  
+  @media only screen and (min-device-width: 320px) and (max-device-width: 766px) {
+  
+      .width_of_input {
+        width: 100%;
+        margin-bottom: -0.9em;
+      }
+  
+      .Img_holder{
+        width: 135px;
+       
+      
+      }
+    .parent_of_input_box{
+        width: 100%;
+       
+        flex-direction: column ;
+  
+    }
+    .input_Button {
+      height: 2.5em;
+      font-size: 15px;
+    }
+    .space{
+        margin-top: 3vh;
+    }
+  
+  .title_fonts {
+      font-size: 18px;
+    }
+    .title_fonts_downside {
+      font-size: 14px;
+      font-weight: 100;
+    }
+    .upperDiv {
+      width: 90%;
+      margin-bottom: 3vh;
+    }
+    .form_div_inner {
+      width: 90%;
+      min-width: 320px;
+      margin-bottom: 1em;
+    }
+  }
+  
+  @media only screen and (min-width: 767px) and (max-device-width: 992px) {
+    .upperDiv {
+      width: 80%;
+      margin-bottom: 3vh;
+    }
+    .form_div_inner {
+      width: 80%;
+    }
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    .upperDiv {
+      width: 50%;
+      margin-bottom: 3vh;
+  
+    }
+    .form_div_inner {
+      width: 50%;
+    }
+}

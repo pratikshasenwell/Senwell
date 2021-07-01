@@ -55,7 +55,7 @@
                 <br> -->
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-12 col-sm" style="margin-top: 2%;">
+                        <div class="col-lg-8 col-md-6" style="margin-top: 2%;">
                             <h4>Business Development Executive<br>Job Description</h4>
                             <!-- <p class="span"><span class="red"></span><span class="black"></span></p> -->
 
@@ -115,61 +115,91 @@
                         </div>
 
 
-                        <!-- <div class="col-lg-4 col-sm">
-                            <form [formGroup]="ReactCandidate">
-                                <div class="form-group">
-                                    <h6 style="color: white;
-                                    font-weight: 600;margin-top: 5%;">Apply Now</h6>
-
-                                    <input type="text" class="form-control" formControlName="name" id="name"
-                                        placeholder=" Name ">
-
-                                    
-
-                        
+                        <div class="col-lg-4 col-md-6">
+                            <div class="jumbotron" style="background: #95c3f5;">
+                                <div class="container">
+                
+                                    <h3 style="text-align: center;">Apply</h3>
+                
+                                    <form action="" [formGroup]="ReactCandidate">
+                                        <mat-form-field appearance="outline" class="width_of_input">
+                                            <mat-label>Name</mat-label>
+                                            <input matInput formControlName="name" />
+                                            <!-- <mat-error *ngIf=""></mat-error>Required</mat-error> -->
+                                            <mat-error *ngIf="ReactCandidate.get('name').invalid">
+                                                Please enter valid Name
+                                            </mat-error>
+                                        </mat-form-field>
+                                         <mat-form-field appearance="outline" class="Email" class="width_of_input">
+                                            <mat-label>Email</mat-label>
+                                            <input matInput formControlName="Email" />
+                                            <mat-error *ngIf="ReactCandidate.get('Email').invalid">
+                                                Please enter a valid email address
+                                            </mat-error>
+                
+                                        </mat-form-field>
+                
+                
+                                        <mat-form-field appearance="outline" class="InputBox" class="width_of_input">
+                                            <mat-label>Company </mat-label>
+                                            <input matInput formControlName="Company" />
+                                            <mat-error *ngIf="ReactCandidate.get('Company').invalid">
+                                                Please enter a company name
+                                            </mat-error>
+                
+                                        </mat-form-field>
+                
+                                        <mat-form-field appearance="outline" class="InputBox" class="width_of_input">
+                                            <mat-label>CTC</mat-label>
+                                            <input matInput formControlName="CTC" />
+                                            <mat-error *ngIf="ReactCandidate.get('CTC').invalid">
+                                                Please enter a valid CTC
+                                            </mat-error>
+                                        </mat-form-field>
+                
+                
+                
+                                        <mat-form-field appearance="outline" class="width_of_input">
+                                            <mat-label>Experience</mat-label>
+                                            <mat-select formControlName="dropDown" name="food">
+                                                <mat-option *ngFor="let food of foods" [value]="food.value">
+                                                    {{food.viewValue}}
+                                                </mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+                
+                                        <div class="files">
+                                            <input type="file" class="upload-box" (change)="uploadCandidateCv($event)" formControlName="file"/>
+                                        </div>
+                
+                                        <!-- <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                                            <div class="custom-file input-container">
+                                              <input
+                                                type="file"
+                                                multiple
+                                                id="file"
+                                                (change)="uploadCandidateCv($event)"
+                                                class="custom-file-input form-control"
+                                              />
+                                              <label class="custom-file-label brws-fld" for="customFile"
+                                                ><i class="fa fa-file-text icon n-brw"></i>Choose file</label
+                                              >
+                                            </div>
+                                          </div> -->
+                
+                                      
+                                          <!-- <button type="submit" class="theme-btn" style="background: #ff4815;border-radius: 30px; margin-left: 20%;"  [disabled]="!ReactCandidate.valid" (click)="saveReactcandidate()">Submit</button> -->
+                
+                                          <button mat-raised-button color="primary" (click)="saveReactcandidate()"  [disabled]="!ReactCandidate.valid">Submit</button>
+                 
+                
+                
+                                    </form>
                                 </div>
-
-                                <div class="form-group">
-                                    <input type="email" class="form-control" id="exampleInputEmail1"
-                                        formControlName="email" aria-describedby="emailHelp" placeholder="Email">
-                                </div>
-                                <div class="form-group">
-
-                                    
-                                    <input type="text" class="form-control" formControlName="company" id="name"
-                                        placeholder=" Current Company ">
-                                </div>
-                                <div class="form-group">
-
-                                    
-                                    <input type="text" class="form-control" formControlName="ctc" id="name"
-                                        placeholder=" Current CTC ">
-                                </div>
-                                <div class="form-group">
-
-                                    <select class="form-control" id="exampleFormControlSelect1"
-                                        formControlName="experience">
-                                        <option>Experience</option>
-                                        <option value=" 0">0</option>
-                                        <option value=" 1">1</option>
-                                        <option value=" 2">2</option>
-                                        <option value=" 3">3</option>
-                                        <option value=" 4">4</option>
-                                        <option value=" 5">5</option>
-                                    </select>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="exampleFormControlFile1"></label>
-                                    <input type="file" class="form-control-file" (change)="uploadCandidateCv($event)" formControlName="file"  id="exampleFormControlFile1">
-                                </div>
-
-                               
-                                <button type="submit" class="theme-btn btn-white-orange" (click)="saveReactcandidate()">Submit</button>
-                            </form>
-                           
-
-                        </div> -->
+                            </div>
+                        </div>
+                       
+                   
                     </div>
                 </div>
             </div>

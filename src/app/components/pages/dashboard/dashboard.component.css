@@ -1,0 +1,45 @@
+table {
+  width: 100%;
+  }
+.dashboard{
+  padding:50px 75px;
+
+}
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  td, th {
+    width: 25%;
+  }
+  .mat-headline{
+    text-align: center;
+    margin-top: 10%;
+    
+    margin-top: 10%;
+    font-weight: 600;
+    color: red;
+    font-size: 28px; 
+   
+  }
+  th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
+    padding: 0;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    text-align: cem;
+    text-align: center;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+ .dashboard{
+  padding: 0px 0px;
+
+}
+}
+
+
+

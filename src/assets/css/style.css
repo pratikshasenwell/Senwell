@@ -348,7 +348,8 @@ table {
     width: 100%;
 }
 table th{
-    background-color: #000;
+    /* background-color: #000; */
+    background: #1a60ac;
     color: #fff;
     font-weight: normal;
 }
