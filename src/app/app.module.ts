@@ -52,9 +52,13 @@ import { PopupcComponent } from './components/pages/popupc/popupc.component';
 import { AdminPanelComponent } from './components/pages/admin-panel/admin-panel.component';
 import { DashboardComponent } from './components/pages/dashboard/dashboard.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { MatFormField, MatLabel } from '@angular/material/form-field';
+import { MatFormField, MatFormFieldControl, MatFormFieldModule, MatLabel } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 import { MatCommonModule } from '@angular/material/core';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatSliderModule } from '@angular/material/slider';
+import { ScrollingModule } from '@angular/cdk/scrolling';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -97,7 +101,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     AdminPanelComponent,
     DashboardComponent,
     PageNotFoundComponent,
-    
+
   ],
   imports: [
     BrowserModule,
@@ -111,18 +115,19 @@ import { MatDialogModule } from '@angular/material/dialog';
     AngularFirestoreModule,
     AngularFireStorageModule,
     BrowserAnimationsModule,
-    
+    MatFormFieldModule,
     MatCommonModule,
     MatDialogModule,
-    
-    
+    MatInputModule,
+    MatSliderModule,
+    ScrollingModule,
 
   ],
   providers: [
-      Location, {
-        provide: LocationStrategy,
-        useClass: PathLocationStrategy
-      }
+    Location, {
+      provide: LocationStrategy,
+      useClass: PathLocationStrategy
+    }
   ],
   bootstrap: [AppComponent]
 })

@@ -18,6 +18,9 @@ declare let $: any;
     ]
 })
 export class AppComponent implements OnInit {
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
   location: any;
   routerSubscription: any;
 
@@ -49,6 +52,9 @@ this.ap.getCoffeeOrders();
           window.scrollTo(0, 0);
       });
   }
+//   onActive(event){
+//     window.scrollTo(0, 0);
+//   }
 }
 
 
