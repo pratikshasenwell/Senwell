@@ -52,12 +52,22 @@ import { PopupcComponent } from './components/pages/popupc/popupc.component';
 import { AdminPanelComponent } from './components/pages/admin-panel/admin-panel.component';
 import { DashboardComponent } from './components/pages/dashboard/dashboard.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { MatFormField, MatFormFieldControl, MatFormFieldModule, MatLabel } from '@angular/material/form-field';
+//import { MatFormField, MatFormFieldControl, MatFormFieldModule, MatLabel } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatCommonModule } from '@angular/material/core';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatSliderModule } from '@angular/material/slider';
 import { ScrollingModule } from '@angular/cdk/scrolling';
+import { MatTableModule } from '@angular/material/table';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatPaginatorModule } from '@angular/material/paginator';
+
+
+
+
+
+
+
 
 @NgModule({
   declarations: [
@@ -121,6 +131,12 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
     MatInputModule,
     MatSliderModule,
     ScrollingModule,
+    MatTableModule,
+    MatPaginatorModule 
+    
+
+   
+    
 
   ],
   providers: [

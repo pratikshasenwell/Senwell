@@ -4,6 +4,7 @@ import { AuthServiceService } from './../../../service/auth-service.service'
 import { HttpClient } from '@angular/common/http';
 import { PopupcComponent } from '../popupc/popupc.component';
 import { MatDialog } from '@angular/material/dialog';
+
 interface Food {
   value: string;
   viewValue: string;
@@ -123,12 +124,10 @@ onSubmit(): void {
 }
 
 uploadCandidateCv(event: any) {
-  debugger
     const php = `/React-developers/${event.target.files[0].name}`;
     this.authService.UploadCandidateFile(event,php)
   }
   saveReactcandidate() {
-   debugger
    this.openDialog()
     this.authService.SaveCandidateData({formdata:this.ReactCandidate.value,downloadurl:this.authService.docDownloadUrl$.value})
   }

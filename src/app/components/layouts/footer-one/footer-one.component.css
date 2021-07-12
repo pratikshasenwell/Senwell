@@ -26,6 +26,7 @@ img {
     margin-top: -20%;
 }
 
+
 #back-topp a {
     display: block;
     width: 40px;
@@ -41,10 +42,12 @@ img {
     box-shadow: rgb(0 0 0 / 5%) 0 0 10px;
     position: fixed;
     z-index: 100;
-    bottom: 66px;
+    /* bottom: 66px; */
+    bottom: 156px;
     right: 20px;
     text-decoration: none;
 }
+
 #back-top-whatsapp{
     display: block;
     width: 40px;
@@ -60,7 +63,7 @@ img {
     box-shadow: rgb(0 0 0 / 5%) 0 0 10px;
     position: fixed;
     z-index: 100;
-    bottom: 110px;
+    bottom: 195px;
     right: 20px;
     text-decoration: none;
 }
@@ -79,7 +82,7 @@ img {
     box-shadow: rgb(0 0 0 / 5%) 0 0 10px;
     position: fixed;
     z-index: 100;
-    bottom: 154px;
+    bottom: 235px;
     right: 20px;
     text-decoration: none;
 }
@@ -102,10 +105,4 @@ img {
     right: 20px;
     text-decoration: none;
 }
-/* .image {
-    width: 65%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    margin-top: -31%;
-} */
+
