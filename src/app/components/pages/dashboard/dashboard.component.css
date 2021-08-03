@@ -15,9 +15,7 @@ table {
   }
   .mat-headline{
     text-align: center;
-    margin-top: 10%;
-    
-    margin-top: 10%;
+    margin-top: 0%;
     font-weight: 600;
     color: red;
     font-size: 28px; 
@@ -29,6 +27,26 @@ table {
     border-bottom-style: solid;
     text-align: cem;
     text-align: center;
+}
+ul li:before {
+  content: "";
+  font-family: Font Awesome\ 5 Pro;
+  position: absolute;
+  left: -15px;
+}
+
+.start{
+  display: flex;
+  justify-content: 	center;
+  margin-bottom: 2%;
+}
+/* .center{
+  display: flex;
+  justify-content: center;
+} */
+.center{
+  display: flex;
+  justify-content: flex-end;
 }
 
 

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
-import { AngularFireStorage } from '@angular/fire/storage';
+import { AngularFireStorage, } from '@angular/fire/storage';
 import { BehaviorSubject } from 'rxjs';
 
 
@@ -43,6 +43,17 @@ export class AuthServiceService {
   // this.firestore.collection("employee").valueChanges({ idField: "id" });
 
   }
+  addstudentdata(studentdata)
+  {
+    this.firestore.collection('employee').add(studentdata).then(()=>{
+console.log('done')
+    })
+  }
+getstudent()
+{
+  return this.firestore.collection('employee', ref =>ref.orderBy('studentage'))
+}
+
 
   deleteCoffeeOrder(data) {
     return this.firestore.collection("employee").doc(data).delete();
@@ -55,7 +66,16 @@ export class AuthServiceService {
   viewdocument(url){
     window.open(url);
   }
+  addstudentdatas(studentdata){
+    this.firestore.collection("employee").add(studentdata).then(()=> {
+      console.log("done")
+    })
+  }
+  getstudents(){
+    return this.firestore.collection("employee",ref=>ref.orderBy('name')).valueChanges();
+  }
 }
+
 
 
 

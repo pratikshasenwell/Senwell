@@ -52,17 +52,21 @@ import { PopupcComponent } from './components/pages/popupc/popupc.component';
 import { AdminPanelComponent } from './components/pages/admin-panel/admin-panel.component';
 import { DashboardComponent } from './components/pages/dashboard/dashboard.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-//import { MatFormField, MatFormFieldControl, MatFormFieldModule, MatLabel } from '@angular/material/form-field';
+import { MatFormField, MatFormFieldControl, MatFormFieldModule, MatLabel } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatCommonModule } from '@angular/material/core';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatSliderModule } from '@angular/material/slider';
 import { ScrollingModule } from '@angular/cdk/scrolling';
 import { MatTableModule } from '@angular/material/table';
-import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatIconModule} from '@angular/material/icon';
 import { MatPaginatorModule } from '@angular/material/paginator';
-
-
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { Ng2OrderModule } from 'ng2-order-pipe';
+import { NgxPaginationModule } from 'ngx-pagination';
+import {MatSelectModule} from '@angular/material/select';
+import {MatButtonModule} from '@angular/material/button';
+// import { MatFormFieldModule } from '@angular/material/form-field';
 
 
 
@@ -132,7 +136,14 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     MatSliderModule,
     ScrollingModule,
     MatTableModule,
-    MatPaginatorModule 
+    MatIconModule,
+    MatPaginatorModule ,
+    Ng2SearchPipeModule,
+    NgxPaginationModule,
+    Ng2OrderModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatButtonModule
     
 
    

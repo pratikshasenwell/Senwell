@@ -256,7 +256,7 @@ ul>li{
     padding-left: 15px;
 }
 ul li:before{
-    content: "\f00c";
+    /* content: "\f00c"; */
     font-family: Font Awesome\ 5 Pro;
     position: absolute;
     left: -15px;
@@ -901,7 +901,7 @@ label.custom-checkbox input:checked ~ .checkmark:after {
     color: #adbecc;
 }
 .text-orange{
-    color: #007bff;
+    /* color: #007bff; */
 }
 .text-blue{
     color: #14212b;

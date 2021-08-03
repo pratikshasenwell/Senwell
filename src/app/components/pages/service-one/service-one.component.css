@@ -39,4 +39,6 @@ h6 {
 }
 p{
     text-align: justify;
+    padding-left: 25px;
+    padding-right: 25px;
 }

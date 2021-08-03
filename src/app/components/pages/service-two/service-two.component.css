@@ -64,6 +64,8 @@ ul li:before {
 }
 p{
     text-align: justify;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 .process-steps {
     float: left;
@@ -162,7 +164,7 @@ p{
 ul li:before {
     position: absolute;
     left: -15px;
-    color: #eaeaf9;
+    color: #007bff;
     font-weight: bold;
 }
 .center{

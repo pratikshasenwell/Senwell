@@ -113,6 +113,8 @@
                                                 Please enter valid Name
                                             </mat-error>
                                         </mat-form-field>
+
+ 
                                         <mat-form-field appearance="outline" class="Email" class="width_of_input">
                                             <mat-label>Email</mat-label>
                                             <input matInput formControlName="Email" />
@@ -121,6 +123,7 @@
                                             </mat-error>
 
                                         </mat-form-field>
+
 
 
                                         <mat-form-field appearance="outline" class="InputBox" class="width_of_input">
@@ -132,7 +135,8 @@
 
                                         </mat-form-field>
 
-                                        <mat-form-field appearance="outline" class="InputBox" class="width_of_input">
+                                        <mat-form-field MatFormFieldControl="CTC" appearance="outline" class="InputBox"
+                                            class="width_of_input">
                                             <mat-label>CTC</mat-label>
                                             <input matInput formControlName="CTC" />
                                             <mat-error *ngIf="ReactCandidate.get('CTC').invalid">
@@ -140,9 +144,9 @@
                                             </mat-error>
                                         </mat-form-field>
 
+                                        
 
-
-                                        <mat-form-field appearance="outline" class="width_of_input">
+                                        <mat-form-field MatFormFieldControl="dropDown" appearance="outline" class="width_of_input">
                                             <mat-label>Experience</mat-label>
                                             <mat-select formControlName="dropDown" name="food">
                                                 <mat-option *ngFor="let food of foods" [value]="food.value">
@@ -157,10 +161,10 @@
                                         </div>
 
                                         <button mat-raised-button color="primary" (click)="saveReactcandidate()"
-                                            [disabled]="!ReactCandidate.valid">Submit</button>
-
+                                            [disabled]="!ReactCandidate.valid">Submit</button> 
+                                   
                                     </form>
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -168,7 +172,6 @@
                 </div>
             </div>
         </div>
- </div>
+    </div>
 </section>
 <app-footer-one></app-footer-one>
-

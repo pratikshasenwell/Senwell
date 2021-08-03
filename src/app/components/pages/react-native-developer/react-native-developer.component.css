@@ -66,9 +66,9 @@
         text-align: justify;
         font-weight: 600;
     }
-    h4{
+    /* h4{
         font-weight: 600;
-    }
+    } */
     h5{
         text-align: justify;
         font-weight: 600;
@@ -179,9 +179,9 @@
   ul{
       padding: 12px;
   }
-  h4{
+  /* h4{
       text-align:justify;
-  }
+  } */
   p{
     line-height: normal;
   }
